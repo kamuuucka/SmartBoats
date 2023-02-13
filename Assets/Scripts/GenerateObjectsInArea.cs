@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Random = UnityEngine.Random;
 using System.Collections.Generic;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// Script to generate objects in an given area.
@@ -8,7 +9,10 @@ using System.Collections.Generic;
 [ExecuteInEditMode]
 public class GenerateObjectsInArea : MonoBehaviour
 {
-    private Bounds _bounds;
+    [SerializeField]
+    private BoxCollider bounds;
+
+    private Bounds _colliderBounds;
 
     [Header("Objects")]
     [SerializeField, Tooltip("Possible objecst to be created in the area.")]
@@ -25,7 +29,7 @@ public class GenerateObjectsInArea : MonoBehaviour
 
     private void Awake()
     {
-        _bounds = GetComponent<Renderer>().bounds;
+        _colliderBounds = bounds.bounds;
     }
 
     /// <summary>
@@ -68,8 +72,8 @@ public class GenerateObjectsInArea : MonoBehaviour
     /// <returns>Returns a random position in the bounds of the area.</returns>
     private Vector3 GetRandomPositionInWorldBounds()
     {
-        Vector3 extents = _bounds.extents;
-        Vector3 center = _bounds.center;
+        Vector3 extents = bounds.extents;
+        Vector3 center = bounds.center;
         return new Vector3(
             Random.Range(-extents.x, extents.x) + center.x,
             Random.Range(-extents.y, extents.y) + center.y,

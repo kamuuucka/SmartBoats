@@ -7,6 +7,8 @@ using Random = UnityEngine.Random;
 
 public class GenerationManager : MonoBehaviour
 {
+    public static GenerationManager Instance { get; private set; }
+
     [Header("Generators")]
     [SerializeField]
     private GenerateObjectsInArea[] boxGenerators;
@@ -60,6 +62,14 @@ public class GenerationManager : MonoBehaviour
     private void Awake()
     {
         Random.InitState(6);
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -74,14 +84,14 @@ public class GenerationManager : MonoBehaviour
     {
         if (_runningSimulation)
         {
-            //Creates a new generation.
-            if (simulationCount >= simulationTimer)
-            {
-                ++generationCount;
-                MakeNewGeneration();
-                simulationCount = -Time.deltaTime;
-            } 
-            simulationCount += Time.deltaTime;
+            // //Creates a new generation.
+            // if (simulationCount >= simulationTimer)
+            // {
+            //     ++generationCount;
+            //     MakeNewGeneration();
+            //     simulationCount = -Time.deltaTime;
+            // } 
+            // simulationCount += Time.deltaTime;
         }
     }
 
@@ -165,6 +175,18 @@ public class GenerationManager : MonoBehaviour
             }
         }
     }
+
+     public void GenerateChild(BoatLogic parentA, BoatLogic parentB)
+     {
+         Vector3 offset = new Vector3(2, 0, 2);
+         var boatObject = Instantiate(boatGenerator.firstObject, parentA.transform.position + offset, Quaternion.identity);
+         BoatLogic boat = boatObject.GetComponent<BoatLogic>();
+         boat.BirthKid(parentA, parentB);
+         boat.Mutate(mutationFactor,mutationChance);
+         boatObject.name = $"{parentA.gameObject.name} & {parentB.gameObject.name} jr.";
+         Debug.Log("Child welcomed to the world!");
+         boat.AwakeUp();
+     }
 
      /// <summary>
      /// Creates a new generation by using GenerateBoxes and GenerateBoats/Pirates.

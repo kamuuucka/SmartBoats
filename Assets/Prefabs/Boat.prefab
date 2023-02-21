@@ -76,14 +76,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
+  steps: 0
   rayRadius: 16
   sight: 30
   movingSpeed: 5
   randomDirectionValue: {x: -1, y: 1}
   boxWeight: 1
   distanceFactor: 1
-  boatWeight: 0
-  boatDistanceFactor: 0
+  boatWeight: 2
+  boatDistanceFactor: 2
   enemyWeight: -1
   enemyDistanceFactor: -1
   visionColor: {r: 0.21466713, g: 0.29546288, b: 0.6792453, a: 1}
@@ -145,6 +146,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -169,3 +171,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

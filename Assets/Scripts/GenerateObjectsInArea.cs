@@ -11,12 +11,14 @@ public class GenerateObjectsInArea : MonoBehaviour
 {
     [SerializeField]
     private BoxCollider bounds;
-
-    private Bounds _colliderBounds;
+    
 
     [Header("Objects")]
     [SerializeField, Tooltip("Possible objecst to be created in the area.")]
     private GameObject[] gameObjectToBeCreated;
+
+    public GameObject firstObject => gameObjectToBeCreated[0];
+    
     [SerializeField, Tooltip("Number of objects to be created.")]
     private uint count;
 
@@ -29,7 +31,6 @@ public class GenerateObjectsInArea : MonoBehaviour
 
     private void Awake()
     {
-        _colliderBounds = bounds.bounds;
     }
 
     /// <summary>
@@ -72,8 +73,8 @@ public class GenerateObjectsInArea : MonoBehaviour
     /// <returns>Returns a random position in the bounds of the area.</returns>
     private Vector3 GetRandomPositionInWorldBounds()
     {
-        Vector3 extents = bounds.extents;
-        Vector3 center = bounds.center;
+        Vector3 extents = bounds.bounds.extents;
+        Vector3 center = bounds.bounds.center;
         return new Vector3(
             Random.Range(-extents.x, extents.x) + center.x,
             Random.Range(-extents.y, extents.y) + center.y,

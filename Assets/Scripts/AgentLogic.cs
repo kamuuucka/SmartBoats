@@ -53,6 +53,7 @@ public struct AgentData
     public float boatDistanceFactor;
     public float enemyWeight;
     public float enemyDistanceFactor;
+    
 
     public AgentData(int steps, int rayRadius, float sight, float movingSpeed, Vector2 randomDirectionValue, float boxWeight, float distanceFactor, float boatWeight, float boatDistanceFactor, float enemyWeight, float enemyDistanceFactor)
     {
@@ -83,6 +84,7 @@ public class AgentLogic : MonoBehaviour, IComparable
     
     [SerializeField]
     protected float points;
+    protected bool canReproduce = false;
 
     private bool _isAwake;
 
@@ -166,6 +168,22 @@ public class AgentLogic : MonoBehaviour, IComparable
         boatDistanceFactor = parent.boatDistanceFactor;
         enemyWeight = parent.enemyWeight;
         enemyDistanceFactor = parent.enemyDistanceFactor;
+    }
+
+    public void BirthKid(BoatLogic parentA, BoatLogic parentB)
+    {
+        
+            steps = Random.Range(0, 100) >= 50 ? parentA.steps : parentB.steps;
+            rayRadius = Random.Range(0, 100) >= 50 ? parentA.rayRadius : parentB.rayRadius;
+            sight = Random.Range(0, 100) >= 50 ? parentA.sight : parentB.sight;
+            movingSpeed = Random.Range(0, 100) >= 50 ? parentA.movingSpeed : parentB.movingSpeed;
+            randomDirectionValue = Random.Range(0, 100) >= 50 ? parentA.randomDirectionValue : parentB.randomDirectionValue;
+            boxWeight = Random.Range(0, 100) >= 50 ? parentA.boxWeight : parentB.boxWeight;
+            distanceFactor = Random.Range(0, 100) >= 50 ? parentA.distanceFactor : parentB.distanceFactor;
+            boatWeight = Random.Range(0, 100) >= 50 ? parentA.boatWeight : parentB.boatWeight;
+            boatDistanceFactor = Random.Range(0, 100) >= 50 ? parentA.boatDistanceFactor : parentB.boatDistanceFactor;
+            enemyWeight = Random.Range(0, 100) >= 50 ? parentA.enemyWeight : parentB.enemyWeight;
+            enemyDistanceFactor = Random.Range(0, 100) >= 50 ? parentA.enemyDistanceFactor : parentB.enemyDistanceFactor;
     }
 
     /// <summary>
@@ -335,8 +353,11 @@ public class AgentLogic : MonoBehaviour, IComparable
                 case "Box":
                     utility = distanceIndex * distanceFactor + boxWeight;
                     break;
+                case "LoveBox":
+                    utility = distanceIndex * distanceFactor + boxWeight;
+                    break;
                 case "Boat":
-                    utility = distanceIndex * boatDistanceFactor + boatWeight;
+                    utility = (canReproduce ? 1 : 0) * (distanceIndex * boatDistanceFactor + boatWeight);
                     break;
                 case "Enemy":
                     utility = distanceIndex * enemyDistanceFactor + enemyWeight;
@@ -371,6 +392,11 @@ public class AgentLogic : MonoBehaviour, IComparable
     {
         return points;
     }
+
+    public bool GetReproduce()
+    {
+        return canReproduce;
+    }
     
     /// <summary>
     /// Compares the points of two agents. When used on Sort function will make the highest points to be on top.
@@ -384,7 +410,9 @@ public class AgentLogic : MonoBehaviour, IComparable
         AgentLogic otherAgent = obj as AgentLogic;
         if (otherAgent != null)
         {
-            return otherAgent.GetPoints().CompareTo(GetPoints());
+            
+                return otherAgent.GetPoints().CompareTo(GetPoints());
+            
         } 
         else
         {

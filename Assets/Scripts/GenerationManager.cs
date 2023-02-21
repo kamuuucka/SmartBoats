@@ -155,11 +155,14 @@ public class GenerationManager : MonoBehaviour
      /// </summary>
      /// <param name="boatParents"></param>
     private void GenerateBoats(BoatLogic[] boatParents)
-    {
+     {
+         int i = 0;
         _activeBoats = new List<BoatLogic>();
         List<GameObject> objects = boatGenerator.RegenerateObjects();
         foreach (GameObject obj in objects)
         {
+            obj.name = "Josh" + i;
+            i++;
             BoatLogic boat = obj.GetComponent<BoatLogic>();
             if (boat != null)
             {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 /// <summary>
@@ -53,7 +54,7 @@ public struct AgentData
     public float boatDistanceFactor;
     public float enemyWeight;
     public float enemyDistanceFactor;
-    
+
 
     public AgentData(int steps, int rayRadius, float sight, float movingSpeed, Vector2 randomDirectionValue, float boxWeight, float distanceFactor, float boatWeight, float boatDistanceFactor, float enemyWeight, float enemyDistanceFactor)
     {
@@ -84,7 +85,9 @@ public class AgentLogic : MonoBehaviour, IComparable
     
     [SerializeField]
     protected float points;
+    [SerializeField] 
     protected bool canReproduce = false;
+    [FormerlySerializedAs("hasBoatTime")] public float hasBoxTime = 0;
 
     private bool _isAwake;
 
@@ -135,6 +138,9 @@ public class AgentLogic : MonoBehaviour, IComparable
     private static float _sightInfluenceInSpeed = 0.0625f;
     private static float _maxUtilityChoiceChance = 0.85f;
     #endregion
+
+    private float distanceIndex = 0;
+    public float lifeTime = 0;
     
     private void Awake()
     {
@@ -148,6 +154,7 @@ public class AgentLogic : MonoBehaviour, IComparable
     {
         points = 0;
         steps = 360 / rayRadius;
+        lifeTime = 0;
         _rigidbody = GetComponent<Rigidbody>();
     }
     
@@ -184,6 +191,11 @@ public class AgentLogic : MonoBehaviour, IComparable
             boatDistanceFactor = Random.Range(0, 100) >= 50 ? parentA.boatDistanceFactor : parentB.boatDistanceFactor;
             enemyWeight = Random.Range(0, 100) >= 50 ? parentA.enemyWeight : parentB.enemyWeight;
             enemyDistanceFactor = Random.Range(0, 100) >= 50 ? parentA.enemyDistanceFactor : parentB.enemyDistanceFactor;
+    }
+
+    public string GetData(BoatLogic boat)
+    {
+        return boat.distanceIndex + "," + boat.boatDistanceFactor + "," + boat.boatWeight + "," + boat.hasBoxTime + ",";
     }
 
     /// <summary>
@@ -344,20 +356,32 @@ public class AgentLogic : MonoBehaviour, IComparable
             
             //Inverts the distanceNormalized. Closer objects will tend to 1, while further objects will tend to 0.
             //Thus, closer objects will have a higher value.
-            float distanceIndex = 1.0f - distanceNormalized;
+            distanceIndex = 1.0f - distanceNormalized;
 
             //Calculate the utility of the found object according to its type.
             switch (raycastHit.collider.gameObject.tag)
             {
                 //All formulas are the same. Only the weights change.
                 case "Box":
-                    utility = distanceIndex * distanceFactor + boxWeight;
+                    utility = distanceIndex * distanceFactor * lifeTime + boxWeight * lifeTime;
                     break;
                 case "LoveBox":
-                    utility = distanceIndex * distanceFactor + boxWeight;
+                    utility = (!canReproduce) ? distanceIndex * distanceFactor + boxWeight : -10;
                     break;
                 case "Boat":
-                    utility = (canReproduce ? 1 : 0) * (distanceIndex * boatDistanceFactor + boatWeight);
+                    if (canReproduce && raycastHit.collider.gameObject.GetComponent<BoatLogic>().canReproduce)
+                    {
+                        utility = (hasBoxTime*hasBoxTime + 10) * distanceIndex * boatDistanceFactor + boatWeight * hasBoxTime * hasBoxTime;
+                    }
+                    else if (canReproduce)
+                    {
+                        utility = (hasBoxTime*hasBoxTime - 10) * (distanceIndex * boatDistanceFactor + boatWeight * hasBoxTime * hasBoxTime);
+                    }
+                    else
+                    {
+                        utility = 0;
+                    }
+                    
                     break;
                 case "Enemy":
                     utility = distanceIndex * enemyDistanceFactor + enemyWeight;
@@ -427,5 +451,19 @@ public class AgentLogic : MonoBehaviour, IComparable
     public AgentData GetData()
     {
         return new AgentData(steps, rayRadius, sight, movingSpeed, randomDirectionValue, boxWeight, distanceFactor, boatWeight, boatDistanceFactor, enemyWeight,  enemyDistanceFactor);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (canReproduce)
+        {
+            Gizmos.color = Color.red;
+        }
+        else
+        {
+            Gizmos.color = Color.blue;
+        }
+        
+        Gizmos.DrawWireSphere(transform.position, 5);
     }
 }

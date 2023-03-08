@@ -55,18 +55,26 @@ public class GenerateObjectsInArea : MonoBehaviour
         {
             DestroyImmediate(transform.GetChild(i).gameObject);
         }
+
+        List<GameObject> newObjects = GenerateSomeBoxes(count);
         
+        return newObjects;
+    }
+
+    public List<GameObject> GenerateSomeBoxes(uint numberOfBoxes)
+    {
         List<GameObject> newObjects = new List<GameObject>();
         for (uint i = 0; i < count; i++)
         {
-            GameObject created = Instantiate(gameObjectToBeCreated[Random.Range(0, gameObjectToBeCreated.Length)], GetRandomPositionInWorldBounds(), GetRandomRotation());
+            GameObject created = Instantiate(gameObjectToBeCreated[Random.Range(0, gameObjectToBeCreated.Length)],
+                GetRandomPositionInWorldBounds(), GetRandomRotation());
             created.transform.parent = transform;
             newObjects.Add(created);
         }
 
         return newObjects;
     }
-    
+
     /// <summary>
     /// Gets a random position delimited by the bounds, using its extends and center.
     /// </summary>

@@ -43,6 +43,8 @@ public class GenerationManager : MonoBehaviour
     [Header("Prefab Saving")]
     [SerializeField]
     private string savePrefabsAt;
+
+    private string childsData;
     
     /// <summary>
     /// Those variables are used mostly for debugging in the inspector.
@@ -92,6 +94,18 @@ public class GenerationManager : MonoBehaviour
             //     simulationCount = -Time.deltaTime;
             // } 
             // simulationCount += Time.deltaTime;
+        }
+    }
+
+    private IEnumerator GenerateBoxesOverTime(float spawnTime, int count)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(spawnTime);
+            foreach (GenerateObjectsInArea generateObjectsInArea in boxGenerators)
+            {
+                generateObjectsInArea.GenerateSomeBoxes((uint)count);
+            }
         }
     }
 
@@ -186,9 +200,15 @@ public class GenerationManager : MonoBehaviour
          BoatLogic boat = boatObject.GetComponent<BoatLogic>();
          boat.BirthKid(parentA, parentB);
          boat.Mutate(mutationFactor,mutationChance);
+         childsData = boat.GetData(boat);
          boatObject.name = $"{parentA.gameObject.name} & {parentB.gameObject.name} jr.";
          Debug.Log("Child welcomed to the world!");
          boat.AwakeUp();
+     }
+
+     public string GetDataChild()
+     {
+         return childsData;
      }
 
      /// <summary>
@@ -251,6 +271,8 @@ public class GenerationManager : MonoBehaviour
         GenerateBoxes();
         GenerateObjects();
         _runningSimulation = true;
+
+        StartCoroutine(GenerateBoxesOverTime(10.0f, 5));
     }
 
      /// <summary>

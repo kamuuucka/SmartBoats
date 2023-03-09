@@ -1,0 +1,78 @@
+Josh10;0;1;3.079998;1;2.635628;30;Josh7;1;1;-6.919994;1;4.187403;27;Josh10 & Josh7 jr.;1;2.635628;3.06
+Josh4;0;1;7.559994;4.456743;2;24;Josh3;0;1;7.559994;1;2;23;Josh4 & Josh3 jr.;4.456743;2;7.54
+Josh16;1;1;3.580024;1;2;36;Josh9;0;1;13.58012;1;2;29;Josh16 & Josh9 jr.;1;1.487698;13.56
+Josh18;2;1;-1.960015;1;2;38;Josh2;1;1;8.039986;-1.209898;1.046069;22;Josh18 & Josh2 jr.;-0.4486027;2;18.02
+Josh19;0;1;23.38034;3.145112;2;39;Josh7;2;2;3.380095;1;4.187403;27;Josh19 & Josh7 jr.;1;2;23.36
+Josh11;1;1;16.0402;1.574792;2;31;Josh10;2;2;6.040191;1;2.635628;30;Josh11 & Josh10 jr.;3.341276;2.635628;26.02
+Josh3;1;2;16.44024;1;2;23;Josh10 & Josh7 jr.;2;1;3.36012;1;2.635628;55;Josh3 & Josh10 & Josh7 jr. jr.;1;2.635628;26.42
+Josh12;3;1;-3.000016;1;2;32;Josh5;1;1;17.00019;1;2;25;Josh12 & Josh5 jr.;1;2;26.98
+Josh6;2;1;10.26006;1;2;26;Josh2;2;2;10.26015;-1.209898;1.046069;22;Josh6 & Josh2 jr.;1.233445;2.62733;30.24
+Josh19;1;2;21.58053;3.145112;2;39;Josh7;3;3;1.580114;1;4.187403;27;Josh19 & Josh7 jr.;3.145112;-0.7954502;31.56
+Josh18;4;2;-5.079978;1;2;38;Josh18 & Josh2 jr.;0;1;16.8802;-0.4486027;2;58;Josh18 & Josh18 & Josh2 jr. jr.;2.438081;2;34.9
+Josh11;3;2;6.860268;1.574792;2;31;Josh11 & Josh10 jr.;1;1;0.8199918;3.341276;2.635628;60;Josh11 & Josh11 & Josh10 jr. jr.;1.574792;2.635628;36.84
+Josh10 & Josh7 jr.;2;2;13.82025;1;2.635628;55;Josh4 & Josh3 jr.;3;1;-0.6600137;4.456743;2;56;Josh10 & Josh7 jr. & Josh4 & Josh3 jr. jr.;4.456743;2;36.88
+Josh12;3;2;8.159978;1;2;32;Josh10;4;3;-1.839756;1;2.635628;30;Josh12 & Josh10 jr.;3.810667;2;38.14
+Josh15;4;1;-0.279801;1;2;35;Josh4;3;2;9.720137;4.456743;2;24;Josh15 & Josh4 jr.;4.456743;2;39.7
+Josh8;4;1;1.060285;-0.2386036;2;28;Josh2;3;3;11.06025;-1.209898;1.046069;22;Josh8 & Josh2 jr.;-0.2386036;2;41.04
+Josh16;5;2;-8.599966;1;2;36;Josh1;2;1;21.40063;1;2;21;Josh16 & Josh1 jr.;1;0.3437217;41.38
+Josh11;3;3;16.78047;1.574792;2;31;Josh7;4;4;6.780128;1;4.187403;27;Josh11 & Josh7 jr.;1.574792;0.9714446;46.76
+Josh16;5;3;-1.799959;1;2;36;Josh9;4;2;8.200832;1;2;29;Josh16 & Josh9 jr.;1;2;48.18
+Josh10;5;4;0.3002347;1;2.635628;30;Josh12 & Josh5 jr.;1;1;13.30011;1;2;62;Josh10 & Josh12 & Josh5 jr. jr.;1;2;50.28
+Josh5;5;2;3.480377;1;2;25;Josh12 & Josh10 jr.;1;1;5.319997;3.810667;2;68;Josh5 & Josh12 & Josh10 jr. jr.;1;2;53.46
+Josh12;3;3;24.04034;1;2;32;Josh3;5;3;4.040493;1;2;23;Josh12 & Josh3 jr.;0.3448328;3.889709;54.02
+Josh19;2;3;35.34108;3.145112;2;39;Josh19 & Josh7 jr.;3;1;1.960022;1;2;59;Josh19 & Josh19 & Josh7 jr. jr.;0.7072752;3.492111;55.32
+Josh18 & Josh18 & Josh2 jr. jr.;2;1;1.399983;2.438081;2;65;Josh18 & Josh2 jr.;4;2;-1.719678;-0.4486027;2;58;Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr.;-2.353569;2;56.3
+Josh18;5;3;7.300004;1;2;38;Josh6;6;2;-2.6998;1;2;26;Josh18 & Josh6 jr.;1;2;57.28
+Josh11 & Josh10 jr.;3;2;2.860001;3.341276;2.635628;60;Josh15 & Josh4 jr.;1;1;9.180237;4.456743;2;69;Josh11 & Josh10 jr. & Josh15 & Josh4 jr. jr.;5.324118;2.635628;58.88
+Josh7;7;5;-8.999727;1;4.187403;27;Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr.;0;1;4.679996;-2.353569;2;78;Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr.;1;2;60.98
+Josh12;3;4;33.92057;1;2;32;Josh10 & Josh7 jr.;4;3;20.84087;1;2.635628;55;Josh12 & Josh10 & Josh7 jr. jr.;2.555281;2.635628;63.9
+Josh16;7;4;-2.059969;1;2;36;Josh16 & Josh9 jr.;2;1;-0.2600161;1;2;73;Josh16 & Josh16 & Josh9 jr. jr.;-0.0382694;2;67.92
+Josh2;7;4;-0.9996419;-1.209898;1.046069;22;Josh6 & Josh2 jr.;4;1;-1.259937;1.233445;2.62733;63;Josh2 & Josh6 & Josh2 jr. jr.;-3.410725;0.3878198;68.98
+Josh12 & Josh10 jr.;2;2;11.46014;3.810667;2;68;Josh11 & Josh7 jr.;2;1;2.839982;1.574792;0.9714446;72;Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr.;3.810667;2;69.6
+Josh11;6;4;10.76062;1.574792;2;31;Josh19 & Josh19 & Josh7 jr. jr.;0;1;15.42016;0.7072752;3.492111;77;Josh11 & Josh19 & Josh19 & Josh7 jr. jr. jr.;0.7072752;3.079233;70.74
+Josh16 & Josh1 jr.;2;1;9.880019;1;0.3437217;71;Josh0;7;1;1.279979;3.71586;2;20;Josh16 & Josh1 jr. & Josh0 jr.;1;0.3437217;71.26
+Josh10;7;5;6.200229;1;2.635628;30;Josh10 & Josh7 jr.;6;4;13.12115;1;2.635628;55;Josh10 & Josh10 & Josh7 jr. jr.;1;2.635628;76.18
+Josh6;7;3;10.34025;1;2;26;Josh2;8;5;0.340353;-1.209898;1.046069;22;Josh6 & Josh2 jr.;1;-1.218473;80.32
+Josh16;7;5;11.3201;1;2;36;Josh0;7;2;11.32005;3.71586;2;20;Josh16 & Josh0 jr.;2.05246;2;81.3
+Josh18 & Josh18 & Josh2 jr. jr.;5;2;-3.240026;2.438081;2;65;Josh18 & Josh2 jr.;6;3;3.640301;-0.4486027;2;58;Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr.;2.438081;1.846161;81.66
+Josh3;8;4;3.440553;1;2;23;Josh11 & Josh19 & Josh19 & Josh7 jr. jr. jr.;0;1;12.6801;0.7072752;3.079233;86;Josh3 & Josh11 & Josh19 & Josh19 & Josh7 jr. jr. jr. jr.;1;2;83.42
+Josh9;6;3;23.70164;1;2;29;Josh16 & Josh9 jr.;4;2;-4.500013;1;2;73;Josh9 & Josh16 & Josh9 jr. jr.;1;2;83.68
+Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr.;1;1;13.60022;1;2;81;Josh12 & Josh10 jr.;2;3;26.44048;3.810667;2;68;Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr. & Josh12 & Josh10 jr. jr.;3.810667;2;84.58
+Josh10 & Josh10 & Josh7 jr. jr.;1;1;-0.4200081;1;2.635628;88;Josh10 & Josh7 jr.;6;5;22.70137;1;2.635628;55;Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh7 jr. jr.;3.21187;2.635628;85.75999
+Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr.;1;2;16.44028;1;2;81;Josh11;7;5;17.44101;1.574792;2;31;Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr. & Josh11 jr.;1;2;87.42
+Josh7;8;6;9.100299;1;4.187403;27;Josh18 & Josh18 & Josh2 jr. jr.;6;3;-5.820032;2.438081;2;65;Josh7 & Josh18 & Josh18 & Josh2 jr. jr. jr.;1;4.857295;89.07999
+Josh11 & Josh11 & Josh10 jr. jr.;4;1;13.42058;1.574792;2.635628;66;Josh15 & Josh4 jr.;2;2;30.5608;4.456743;2;69;Josh11 & Josh11 & Josh10 jr. jr. & Josh15 & Josh4 jr. jr.;4.456743;2;90.25999
+Josh16 & Josh16 & Josh9 jr. jr.;3;1;-3.759925;-0.0382694;2;83;Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr.;1;1;14.56013;3.810667;2;85;Josh16 & Josh16 & Josh9 jr. jr. & Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr. jr.;1.138788;-1.473855;94.16
+Josh10 & Josh10 & Josh7 jr. jr.;3;2;-10.97991;1;2.635628;88;Josh10 & Josh7 jr.;6;6;32.14158;1;2.635628;55;Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh7 jr. jr.;1;2.635628;95.2
+Josh10;10;6;-2.779404;1;2.635628;30;Josh19 & Josh19 & Josh7 jr. jr.;3;2;11.8806;0.7072752;3.492111;77;Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr.;0.7072752;3.492111;97.2
+Josh16 & Josh1 jr.;5;2;6.140061;1;0.3437217;71;Josh16;10;6;-2.459677;1;2;36;Josh16 & Josh1 jr. & Josh16 jr.;1.328622;-0.03729534;97.52
+Josh18;10;4;-1.059671;1;2;38;Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr.;1;2;32.62078;-2.353569;2;78;Josh18 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr.;-1.67514;2;98.92
+Josh19 & Josh7 jr.;8;2;-4.179595;1;2;59;Josh3 & Josh10 & Josh7 jr. jr.;5;1;22.76086;1;2.635628;61;Josh19 & Josh7 jr. & Josh3 & Josh10 & Josh7 jr. jr. jr.;1;2;99.18
+Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr.;2;3;18.68056;1;2;81;Josh12 & Josh10 & Josh7 jr. jr.;0;1;35.76063;2.555281;2.635628;82;Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr. & Josh12 & Josh10 & Josh7 jr. jr. jr.;2.555281;2.635628;99.66
+Josh7;10;7;-0.139473;1;4.187403;27;Josh18 & Josh18 & Josh2 jr. jr.;6;4;4.939959;2.438081;2;65;Josh7 & Josh18 & Josh18 & Josh2 jr. jr. jr.;2.438081;5.954596;99.84
+Josh6;10;4;0.68038;1;2;26;Josh6 & Josh2 jr.;6;2;10.42018;1.233445;2.62733;63;Josh6 & Josh6 & Josh2 jr. jr.;1;2;100.66
+Josh11 & Josh10 jr.;4;3;35.88086;3.341276;2.635628;60;Josh12 & Josh10 jr.;4;4;23.76088;3.810667;2;68;Josh11 & Josh10 jr. & Josh12 & Josh10 jr. jr.;3.341276;3.45157;101.9
+Josh10 & Josh7 jr.;10;7;-0.3583786;1;2.635628;55;Josh19 & Josh19 & Josh7 jr. jr.;5;3;-2.619401;0.7072752;3.492111;77;Josh10 & Josh7 jr. & Josh19 & Josh19 & Josh7 jr. jr. jr.;0.7072752;3.757247;102.7
+Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr.;0;1;5.679996;0.7072752;3.492111;101;Josh10;11;7;-7.099302;1;2.635628;30;Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh10 jr.;0.7072752;-0.2453279;102.88
+Josh16;10;7;3.560318;1;2;36;Josh16 & Josh1 jr. & Josh16 jr.;1;1;-3.980005;1.328622;-0.03729534;102;Josh16 & Josh16 & Josh1 jr. & Josh16 jr. jr.;1.328622;2;103.54
+Josh10 & Josh7 jr.;11;8;-6.438355;1;2.635628;55;Josh19 & Josh19 & Josh7 jr. jr.;5;4;1.300596;0.7072752;3.492111;77;Josh10 & Josh7 jr. & Josh19 & Josh19 & Josh7 jr. jr. jr.;1;3.492111;106.62
+Josh16;11;8;-3.339684;1;2;36;Josh16 & Josh1 jr. & Josh16 jr.;1;2;-0.8800082;1.328622;-0.03729534;102;Josh16 & Josh16 & Josh1 jr. & Josh16 jr. jr.;1;-1.27937;106.64
+Josh18 & Josh2 jr.;6;4;28.80077;-0.4486027;2;58;Josh6 & Josh6 & Josh2 jr. jr.;1;1;-3.840005;1;2;107;Josh18 & Josh2 jr. & Josh6 & Josh6 & Josh2 jr. jr. jr.;1;2;106.82
+Josh3 & Josh11 & Josh19 & Josh19 & Josh7 jr. jr. jr. jr.;0;1;23.66035;1;2;92;Josh15 & Josh4 jr.;3;3;37.38118;4.456743;2;69;Josh3 & Josh11 & Josh19 & Josh19 & Josh7 jr. jr. jr. jr. & Josh15 & Josh4 jr. jr.;1.631348;2;107.08
+Josh2;11;6;-2.679652;-1.209898;1.046069;22;Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr.;2;3;31.00098;-2.353569;2;78;Josh2 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr.;-1.209898;2;107.3
+Josh16 & Josh1 jr.;7;3;-3.439948;1;0.3437217;71;Josh0;10;3;7.960656;3.71586;2;20;Josh16 & Josh1 jr. & Josh0 jr.;1;4.947604;107.94
+Josh10 & Josh10 & Josh7 jr. jr.;3;3;3.340146;1;2.635628;88;Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh10 jr.;1;1;-3.360005;0.7072752;-0.2453279;110;Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh10 jr. jr.;1;2.839992;109.52
+Josh18;11;5;0.4603201;1;2;38;Josh6;11;5;0.4603721;1;2;26;Josh18 & Josh6 jr.;-2.28893;4.957319;110.44
+Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr.;4;4;9.78077;1;2;81;Josh12 & Josh10 & Josh7 jr. jr.;2;2;26.86088;2.555281;2.635628;82;Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr. & Josh12 & Josh10 & Josh7 jr. jr. jr.;2.555281;2.635628;110.76
+Josh9;11;4;1.50196;1;2;29;Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr.;5;2;-8.119682;3.810667;2;85;Josh9 & Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr. jr.;4.898076;2;111.48
+Josh16 & Josh16 & Josh9 jr. jr. & Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr. jr.;1;1;7.420175;1.138788;-1.473855;99;Josh16 & Josh16 & Josh9 jr. jr.;4;2;3.66006;-0.0382694;2;83;Josh16 & Josh16 & Josh9 jr. jr. & Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr. jr. & Josh16 & Josh16 & Josh9 jr. jr. jr.;4.587694;2;111.58
+Josh16 & Josh16 & Josh9 jr. jr. & Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr. jr. & Josh16 & Josh16 & Josh9 jr. jr. jr.;0;1;1.599999;4.587694;2;122;Josh16 & Josh16 & Josh9 jr. jr.;4;3;5.260059;-0.0382694;2;83;Josh16 & Josh16 & Josh9 jr. jr. & Josh12 & Josh10 jr. & Josh11 & Josh7 jr. jr. jr. & Josh16 & Josh16 & Josh9 jr. jr. jr. & Josh16 & Josh16 & Josh9 jr. jr. jr.;-1.823388;2;113.18
+Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr.;1;2;6.17999;0.7072752;3.492111;101;Josh10;11;8;3.400689;1;2.635628;30;Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh10 jr.;2.291922;2.269027;113.38
+Josh9 & Josh16 & Josh9 jr. jr.;1;1;19.86026;1;2;93;Josh16 & Josh9 jr.;5;3;15.36032;1;2;73;Josh9 & Josh16 & Josh9 jr. jr. & Josh16 & Josh9 jr. jr.;1;2;113.54
+Josh6 & Josh2 jr.;3;1;4.279988;1;-1.218473;89;Josh16 & Josh1 jr. & Josh16 jr.;2;3;-2.920012;1.328622;-0.03729534;102;Josh6 & Josh2 jr. & Josh16 & Josh1 jr. & Josh16 jr. jr.;1.328622;1.48285;114.6
+Josh9 & Josh16 & Josh9 jr. jr. & Josh16 & Josh9 jr. jr.;0;1;2.759998;1;2;125;Josh11 & Josh7 jr.;7;2;-0.4594792;1.574792;0.9714446;72;Josh9 & Josh16 & Josh9 jr. jr. & Josh16 & Josh9 jr. jr. & Josh11 & Josh7 jr. jr.;3.856613;0.9714446;116.3
+Josh10 & Josh7 jr. & Josh19 & Josh19 & Josh7 jr. jr. jr.;0;1;10.58005;1;3.492111;112;Josh19 & Josh19 & Josh7 jr. jr.;6;5;1.880588;0.7072752;3.492111;77;Josh10 & Josh7 jr. & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh19 & Josh19 & Josh7 jr. jr. jr.;3.337778;0.1111717;117.2
+Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr. & Josh11 jr.;0;1;29.86049;1;2;96;Josh11;8;6;37.30169;1.574792;2;31;Josh7 & Josh18 & Josh18 & Josh2 jr. jr. & Josh18 & Josh2 jr. jr. jr. & Josh11 jr. & Josh11 jr.;-0.2253338;2;117.28
+Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh10 jr. jr.;1;1;-1.700007;1;2.839992;118;Josh2;12;7;-2.15966;-1.209898;1.046069;22;Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh10 jr. jr. & Josh2 jr.;1;2.839992;117.82
+Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh10 jr.;0;1;5.279996;2.291922;2.269027;124;Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr.;1;3;11.46007;0.7072752;3.492111;101;Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. & Josh10 jr. & Josh10 & Josh19 & Josh19 & Josh7 jr. jr. jr. jr.;2.291922;3.492111;118.66
+Josh6 & Josh2 jr.;5;2;-10.83999;1;-1.218473;89;Josh6 & Josh2 jr. & Josh16 & Josh1 jr. & Josh16 jr. jr.;1;1;-5.119988;1.328622;1.48285;126;Josh6 & Josh2 jr. & Josh6 & Josh2 jr. & Josh16 & Josh1 jr. & Josh16 jr. jr. jr.;1;-1.218473;119.48

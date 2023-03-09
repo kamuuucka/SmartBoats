@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -10,6 +12,10 @@ public class BoatLogic : AgentLogic
     private static float _boxPoints = 2.0f;
     private static float _piratePoints = -100.0f;
     #endregion
+
+    public int numberOfFood;
+    public int numberOfLoveBoxes;
+    public int numberOfKids;
 
     private string parentsData;
     //public float lifeTime = 50.0f;
@@ -22,6 +28,7 @@ public class BoatLogic : AgentLogic
             {
                 canReproduce = true;
                 hasBoxTime = 0;
+                numberOfLoveBoxes++;
                 Destroy(other.gameObject);
             }
             
@@ -29,8 +36,9 @@ public class BoatLogic : AgentLogic
         if(other.gameObject.tag.Equals("Box"))
         {
             //points += _boxPoints;
-            Debug.LogError($"{name} FEEDING TIME");
+            //Debug.LogError($"{name} FEEDING TIME");
             lifeTime -= 10.0f;
+            numberOfFood++;
             Destroy(other.gameObject);
         }
         
@@ -47,8 +55,14 @@ public class BoatLogic : AgentLogic
 
         if (lifeTime > 40)
         {
+            GenerateDeathCertificate();
             Destroy(gameObject);
         }
+    }
+
+    public void GenerateDeathCertificate()
+    {
+        GenerationManager.Instance.AddToDeaths(name, numberOfFood, numberOfLoveBoxes, numberOfKids, lifeTime, LocalIndex);
     }
 
     private void OnCollisionEnter(Collision other)
@@ -68,27 +82,13 @@ public class BoatLogic : AgentLogic
                 canReproduce = false;
                 hasBoxTime = 0;
                 boatLogic.canReproduce = false;
+                numberOfKids++;
+                boatLogic.numberOfKids++;
                 GenerationManager.Instance.GenerateChild(this, boatLogic);
                 parentsData = GetData(this) + GetData(boatLogic) + GenerationManager.Instance.GetDataChild();
-                SaveToFile(parentsData);
             }
         }
     }
 
-    private void SaveToFile(string data)
-    {
-        using (TextWriter writer = new StreamWriter("Assets/results.txt", true))
-        {
-
-            writer.WriteLine(data);
-            writer.Close();
-        }
-
-        string line = "";
-        using StreamReader sr = new StreamReader("Assets/results.txt");
-        while ((line = sr.ReadLine()) != null)
-        {
-            Console.WriteLine(line);
-        }
-    }
+    
 }

@@ -106,11 +106,11 @@ public class AgentLogic : MonoBehaviour, IComparable
     [Space(10)]
     [Header("Weights")]
     [SerializeField]
-    private float boxWeight;
+    public float boxWeight;
     [SerializeField]
     private float distanceFactor;
     [SerializeField]
-    private float boatWeight;
+    public float boatWeight;
     [SerializeField]
     private float boatDistanceFactor;
     [SerializeField]
@@ -141,7 +141,11 @@ public class AgentLogic : MonoBehaviour, IComparable
 
     private float distanceIndex = 0;
     public float lifeTime = 0;
-    
+    public static int index;
+    private int localIndex;
+
+    public int LocalIndex => localIndex;
+
     private void Awake()
     {
         Initiate();
@@ -155,6 +159,7 @@ public class AgentLogic : MonoBehaviour, IComparable
         points = 0;
         steps = 360 / rayRadius;
         lifeTime = 0;
+        localIndex = index++;
         _rigidbody = GetComponent<Rigidbody>();
     }
     

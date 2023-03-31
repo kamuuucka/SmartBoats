@@ -16,10 +16,8 @@ public class BoatLogic : AgentLogic
     public int numberOfFood;
     public int numberOfLoveBoxes;
     public int numberOfKids;
-
     private string parentsData;
-    //public float lifeTime = 50.0f;
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag.Equals("LoveBox"))
@@ -35,8 +33,6 @@ public class BoatLogic : AgentLogic
         }
         if(other.gameObject.tag.Equals("Box"))
         {
-            //points += _boxPoints;
-            //Debug.LogError($"{name} FEEDING TIME");
             lifeTime -= 10.0f;
             numberOfFood++;
             Destroy(other.gameObject);
@@ -62,18 +58,11 @@ public class BoatLogic : AgentLogic
 
     public void GenerateDeathCertificate()
     {
-        GenerationManager.Instance.AddToDeaths(name, numberOfFood, numberOfLoveBoxes, numberOfKids, lifeTime, LocalIndex);
+        GenerationManager.Instance.AddToDeaths(this, name, numberOfFood, numberOfLoveBoxes, numberOfKids, lifeTime, LocalIndex);
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.tag.Equals("Enemy"))
-        {
-            //This is a safe-fail mechanism. In case something goes wrong and the Boat is not destroyed after touching
-            //a pirate, it also gets a massive negative number of points.
-            points += _piratePoints;
-        }
-
         if (other.gameObject.tag.Equals("Boat"))
         {
             var boatLogic = other.gameObject.GetComponent<BoatLogic>();

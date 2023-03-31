@@ -1,0 +1,183 @@
+Josh14;34;0;0;0;40.00072
+Josh17;37;0;0;0;40.00072
+Josh4;24;1;2;2;40.00095
+Josh13;33;1;1;0;40.00095
+Josh5;25;2;3;2;40.00074
+Josh0;20;6;3;3;0.02047362
+Josh1;21;3;0;0;30.06113
+Josh2;22;5;3;2;10.08033
+Josh3;23;6;2;2;0.1206815
+Josh6;26;6;2;1;0.1402347
+Josh7;27;5;2;1;10.16011
+Josh8;28;5;1;1;10.20024
+Josh9;29;6;2;1;0.2205618
+Josh10;30;5;4;4;10.24104
+Josh11;31;6;3;2;0.2603758
+Josh12;32;6;5;4;0.3003892
+Josh15;35;6;1;1;0.3204331
+Josh16;36;5;2;2;10.34018
+Josh18;38;6;1;0;0.3603945
+Josh19;39;6;2;1;0.3803091
+Josh10 & Josh7 jr.;55;6;4;4;-3.439435
+Josh12 & Josh4 jr.;56;5;2;1;-1.599636
+Josh10 & Josh10 & Josh7 jr. jr.;57;4;2;2;7.599969
+Josh8 & Josh2 jr.;58;5;1;0;-4.859949
+Josh19 & Josh11 jr.;59;1;2;1;28.40069
+Josh16 & Josh9 jr.;60;4;1;0;-2.219907
+Josh4 & Josh10 & Josh7 jr. jr.;61;3;1;1;6.840138
+Josh12 & Josh3 jr.;62;3;1;1;4.240073
+Josh10 & Josh10 & Josh7 jr. jr.;63;3;2;1;3.940274
+Josh5 & Josh10 & Josh7 jr. jr.;64;3;2;2;-2.039996
+Josh2 & Josh0 jr.;65;1;2;2;17.96029
+Josh11 & Josh10 & Josh10 & Josh7 jr. jr. jr.;66;2;2;1;7.300112
+Josh10 & Josh12 & Josh4 jr. jr.;67;1;1;1;6.540001
+Josh5 & Josh10 & Josh7 jr. jr. & Josh12 & Josh3 jr. jr.;68;1;1;0;5.939987
+Josh15 & Josh6 jr.;69;0;0;0;15.64017
+Josh0 & Josh2 & Josh0 jr. jr.;70;1;1;0;4.399995
+Josh12 & Josh19 & Josh11 jr. jr.;71;2;0;0;-5.959949
+Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh10 & Josh7 jr. jr. jr.;72;1;1;0;2.33999
+Josh16 & Josh3 jr.;73;2;1;0;-9.579991
+Josh12 & Josh5 jr.;74;0;1;0;6.779994
+Josh11 & Josh10 & Josh10 & Josh7 jr. jr. jr. & Josh4 & Josh10 & Josh7 jr. jr. jr.;75;0;0;0;3.559997
+Josh5 & Josh10 & Josh7 jr. jr. & Josh10 & Josh12 & Josh4 jr. jr. jr.;76;0;0;0;3.139998
+Josh0 & Josh2 & Josh0 jr. jr.;77;0;0;0;2.219999
+Josh6 & Josh19 & Josh11 jr. jr.;78;0;0;0;0.06
+Josh0 & Josh2 & Josh0 jr. jr. & Josh18 jr.;79;0;0;0;0.3
+Josh14;34;0;0;0;40.00072
+Josh17;37;0;0;0;40.00072
+Josh4;24;1;2;2;40.00095
+Josh13;33;1;1;0;40.00095
+Josh5;25;2;3;2;40.00074
+Josh0;20;6;3;3;0.02047362
+Josh1;21;3;0;0;30.06113
+Josh2;22;5;3;2;10.08033
+Josh3;23;6;2;2;0.1206815
+Josh6;26;6;2;1;0.1402347
+Josh7;27;5;2;1;10.16011
+Josh8;28;5;1;1;10.20024
+Josh9;29;6;2;1;0.2205618
+Josh10;30;5;4;4;10.24104
+Josh11;31;6;3;2;0.2603758
+Josh12;32;6;5;4;0.3003892
+Josh15;35;6;1;1;0.3204331
+Josh16;36;5;2;2;10.34018
+Josh18;38;6;1;0;0.3603945
+Josh19;39;6;2;1;0.3803091
+Josh10 & Josh7 jr.;55;6;4;4;-3.439435
+Josh12 & Josh4 jr.;56;5;2;1;-1.599636
+Josh10 & Josh10 & Josh7 jr. jr.;57;4;2;2;7.599969
+Josh8 & Josh2 jr.;58;5;1;0;-4.859949
+Josh19 & Josh11 jr.;59;1;2;1;28.40069
+Josh16 & Josh9 jr.;60;4;1;0;-2.219907
+Josh4 & Josh10 & Josh7 jr. jr.;61;3;1;1;6.840138
+Josh12 & Josh3 jr.;62;3;1;1;4.240073
+Josh10 & Josh10 & Josh7 jr. jr.;63;3;2;1;3.940274
+Josh5 & Josh10 & Josh7 jr. jr.;64;3;2;2;-2.039996
+Josh2 & Josh0 jr.;65;1;2;2;17.96029
+Josh11 & Josh10 & Josh10 & Josh7 jr. jr. jr.;66;2;2;1;7.300112
+Josh10 & Josh12 & Josh4 jr. jr.;67;1;1;1;6.540001
+Josh5 & Josh10 & Josh7 jr. jr. & Josh12 & Josh3 jr. jr.;68;1;1;0;5.939987
+Josh15 & Josh6 jr.;69;0;0;0;15.64017
+Josh0 & Josh2 & Josh0 jr. jr.;70;1;1;0;4.399995
+Josh12 & Josh19 & Josh11 jr. jr.;71;2;0;0;-5.959949
+Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh10 & Josh7 jr. jr. jr.;72;1;1;0;2.33999
+Josh16 & Josh3 jr.;73;2;1;0;-9.579991
+Josh12 & Josh5 jr.;74;0;1;0;6.779994
+Josh11 & Josh10 & Josh10 & Josh7 jr. jr. jr. & Josh4 & Josh10 & Josh7 jr. jr. jr.;75;0;0;0;3.559997
+Josh5 & Josh10 & Josh7 jr. jr. & Josh10 & Josh12 & Josh4 jr. jr. jr.;76;0;0;0;3.139998
+Josh0 & Josh2 & Josh0 jr. jr.;77;0;0;0;2.219999
+Josh6 & Josh19 & Josh11 jr. jr.;78;0;0;0;0.06
+Josh0 & Josh2 & Josh0 jr. jr. & Josh18 jr.;79;0;0;0;0.3
+Josh5 & Josh10 & Josh7 jr. jr. & Josh12 & Josh5 jr. jr.;80;0;0;0;0.22
+Josh14;34;0;0;0;40.00072
+Josh17;37;0;0;0;40.00072
+Josh4;24;1;2;2;40.00095
+Josh13;33;1;1;0;40.00095
+Josh5;25;2;3;2;40.00074
+Josh0;20;6;3;3;0.02047362
+Josh1;21;3;0;0;30.06113
+Josh2;22;5;3;2;10.08033
+Josh3;23;6;2;2;0.1206815
+Josh6;26;6;2;1;0.1402347
+Josh7;27;5;2;1;10.16011
+Josh8;28;5;1;1;10.20024
+Josh9;29;6;2;1;0.2205618
+Josh10;30;5;4;4;10.24104
+Josh11;31;6;3;2;0.2603758
+Josh12;32;6;5;4;0.3003892
+Josh15;35;6;1;1;0.3204331
+Josh16;36;5;2;2;10.34018
+Josh18;38;6;1;0;0.3603945
+Josh19;39;6;2;1;0.3803091
+Josh10 & Josh7 jr.;55;6;4;4;-3.439435
+Josh12 & Josh4 jr.;56;5;2;1;-1.599636
+Josh10 & Josh10 & Josh7 jr. jr.;57;4;2;2;7.599969
+Josh8 & Josh2 jr.;58;5;1;0;-4.859949
+Josh19 & Josh11 jr.;59;1;2;1;28.40069
+Josh16 & Josh9 jr.;60;4;1;0;-2.219907
+Josh4 & Josh10 & Josh7 jr. jr.;61;3;1;1;6.840138
+Josh12 & Josh3 jr.;62;3;1;1;4.240073
+Josh10 & Josh10 & Josh7 jr. jr.;63;3;2;1;3.940274
+Josh5 & Josh10 & Josh7 jr. jr.;64;3;2;2;-2.039996
+Josh2 & Josh0 jr.;65;1;2;2;17.96029
+Josh11 & Josh10 & Josh10 & Josh7 jr. jr. jr.;66;2;2;1;7.300112
+Josh10 & Josh12 & Josh4 jr. jr.;67;1;1;1;6.540001
+Josh5 & Josh10 & Josh7 jr. jr. & Josh12 & Josh3 jr. jr.;68;1;1;0;5.939987
+Josh15 & Josh6 jr.;69;0;0;0;15.64017
+Josh0 & Josh2 & Josh0 jr. jr.;70;1;1;0;4.399995
+Josh12 & Josh19 & Josh11 jr. jr.;71;2;0;0;-5.959949
+Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh10 & Josh7 jr. jr. jr.;72;1;1;0;2.33999
+Josh16 & Josh3 jr.;73;2;1;0;-9.579991
+Josh12 & Josh5 jr.;74;0;1;0;6.779994
+Josh11 & Josh10 & Josh10 & Josh7 jr. jr. jr. & Josh4 & Josh10 & Josh7 jr. jr. jr.;75;0;0;0;3.559997
+Josh5 & Josh10 & Josh7 jr. jr. & Josh10 & Josh12 & Josh4 jr. jr. jr.;76;0;0;0;3.139998
+Josh0 & Josh2 & Josh0 jr. jr.;77;0;0;0;2.219999
+Josh6 & Josh19 & Josh11 jr. jr.;78;0;0;0;0.06
+Josh0 & Josh2 & Josh0 jr. jr. & Josh18 jr.;79;0;0;0;0.3
+Josh5 & Josh10 & Josh7 jr. jr. & Josh12 & Josh5 jr. jr.;80;0;0;0;0.22
+Josh14;34;0;0;0;40.00072
+Josh17;37;0;0;0;40.00072
+Josh4;24;1;2;2;40.00095
+Josh13;33;1;1;0;40.00095
+Josh5;25;2;3;2;40.00074
+Josh0;20;6;3;3;0.02047362
+Josh1;21;3;0;0;30.06113
+Josh2;22;5;3;2;10.08033
+Josh3;23;6;2;2;0.1206815
+Josh6;26;6;2;1;0.1402347
+Josh7;27;5;2;1;10.16011
+Josh8;28;5;1;1;10.20024
+Josh9;29;6;2;1;0.2205618
+Josh10;30;5;4;4;10.24104
+Josh11;31;6;3;2;0.2603758
+Josh12;32;6;5;4;0.3003892
+Josh15;35;6;1;1;0.3204331
+Josh16;36;5;2;2;10.34018
+Josh18;38;6;1;0;0.3603945
+Josh19;39;6;2;1;0.3803091
+Josh10 & Josh7 jr.;55;6;4;4;-3.439435
+Josh12 & Josh4 jr.;56;5;2;1;-1.599636
+Josh10 & Josh10 & Josh7 jr. jr.;57;4;2;2;7.599969
+Josh8 & Josh2 jr.;58;5;1;0;-4.859949
+Josh19 & Josh11 jr.;59;1;2;1;28.40069
+Josh16 & Josh9 jr.;60;4;1;0;-2.219907
+Josh4 & Josh10 & Josh7 jr. jr.;61;3;1;1;6.840138
+Josh12 & Josh3 jr.;62;3;1;1;4.240073
+Josh10 & Josh10 & Josh7 jr. jr.;63;3;2;1;3.940274
+Josh5 & Josh10 & Josh7 jr. jr.;64;3;2;2;-2.039996
+Josh2 & Josh0 jr.;65;1;2;2;17.96029
+Josh11 & Josh10 & Josh10 & Josh7 jr. jr. jr.;66;2;2;1;7.300112
+Josh10 & Josh12 & Josh4 jr. jr.;67;1;1;1;6.540001
+Josh5 & Josh10 & Josh7 jr. jr. & Josh12 & Josh3 jr. jr.;68;1;1;0;5.939987
+Josh15 & Josh6 jr.;69;0;0;0;15.64017
+Josh0 & Josh2 & Josh0 jr. jr.;70;1;1;0;4.399995
+Josh12 & Josh19 & Josh11 jr. jr.;71;2;0;0;-5.959949
+Josh10 & Josh10 & Josh7 jr. jr. & Josh10 & Josh10 & Josh7 jr. jr. jr.;72;1;1;0;2.33999
+Josh16 & Josh3 jr.;73;2;1;0;-9.579991
+Josh12 & Josh5 jr.;74;0;1;0;6.779994
+Josh11 & Josh10 & Josh10 & Josh7 jr. jr. jr. & Josh4 & Josh10 & Josh7 jr. jr. jr.;75;0;0;0;3.559997
+Josh5 & Josh10 & Josh7 jr. jr. & Josh10 & Josh12 & Josh4 jr. jr. jr.;76;0;0;0;3.139998
+Josh0 & Josh2 & Josh0 jr. jr.;77;0;0;0;2.219999
+Josh6 & Josh19 & Josh11 jr. jr.;78;0;0;0;0.06
+Josh0 & Josh2 & Josh0 jr. jr. & Josh18 jr.;79;0;0;0;0.3
+Josh5 & Josh10 & Josh7 jr. jr. & Josh12 & Josh5 jr. jr.;80;0;0;0;0.22

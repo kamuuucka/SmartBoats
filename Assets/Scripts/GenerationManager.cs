@@ -106,8 +106,9 @@ public class GenerationManager : MonoBehaviour
     private BoatLogic[] _boatParents;
     private PirateLogic[] _pirateParents;
 
-    public void AddToDeaths(string name, int boxes,int loveBoxes,int children,float lifeTime, int index)
+    public void AddToDeaths(BoatLogic boat, string name, int boxes,int loveBoxes,int children,float lifeTime, int index)
     {
+        //_activeBoats.Remove(boat);
         deaths.Add(new DeathCertificate
         {
             name = name,
@@ -146,7 +147,7 @@ public class GenerationManager : MonoBehaviour
         {
             simulationTime -= Time.deltaTime;
         }
-        else
+        else 
         {
             
 #if UNITY_EDITOR
@@ -311,7 +312,7 @@ public class GenerationManager : MonoBehaviour
         GenerateBoxes();
 
         //Fetch parents
-        _activeBoats.RemoveAll(item => item == null);
+        //_activeBoats.RemoveAll(item => item == null);
         _activeBoats.Sort();
         if (_activeBoats.Count == 0)
         {
@@ -341,11 +342,6 @@ public class GenerationManager : MonoBehaviour
         lastPirateWinner.name += "Gen-" + generationCount;
         lastPirateWinnerData = lastPirateWinner.GetData();
         PrefabUtility.SaveAsPrefabAsset(lastPirateWinner.gameObject, savePrefabsAt + lastPirateWinner.name + ".prefab");
-
-        //Winners:
-        Debug.Log("Last winner boat had: " + lastBoatWinner.GetPoints() + " points!" + " Last winner pirate had: " +
-                  lastPirateWinner.GetPoints() + " points!");
-
         GenerateObjects(_boatParents, _pirateParents);
     }
 
@@ -381,9 +377,9 @@ public class GenerationManager : MonoBehaviour
     public void StopSimulation()
     {
         _runningSimulation = false;
-        _activeBoats.RemoveAll(item => item == null);
-        _activeBoats.ForEach(boat => boat.Sleep());
-        _activePirates.ForEach(pirate => pirate.Sleep());
+        //_activeBoats.RemoveAll(item => item == null);
+       //_activeBoats.ForEach(boat => boat.Sleep());
+       // _activePirates.ForEach(pirate => pirate.Sleep());
     }
 
     private void OnDestroy()

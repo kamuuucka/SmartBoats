@@ -85831,7 +85831,7 @@ MonoBehaviour:
   generationCount: -1
   certificates: []
   savePrefabsAt: Assets/Prefabs/SavedGeneration/
-  simulationTime: 30
+  simulationTime: 15
   lastBoatWinnerData:
     steps: 0
     rayRadius: 0

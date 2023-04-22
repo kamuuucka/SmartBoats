@@ -106,7 +106,7 @@ public class GenerationManager : MonoBehaviour
     private BoatLogic[] _boatParents;
     private PirateLogic[] _pirateParents;
 
-    public void AddToDeaths(BoatLogic boat, string name, int boxes,int loveBoxes,int children,float lifeTime, int index)
+    public void AddToDeaths(string name, int boxes,int loveBoxes,int children,float lifeTime, int index)
     {
         //_activeBoats.Remove(boat);
         deaths.Add(new DeathCertificate
@@ -194,7 +194,7 @@ public class GenerationManager : MonoBehaviour
     public void GenerateObjects(BoatLogic[] boatParents = null, PirateLogic[] pirateParents = null)
     {
         GenerateBoats(boatParents);
-        GeneratePirates(pirateParents);
+        //GeneratePirates(pirateParents);
     }
 
     /// <summary>
@@ -203,27 +203,27 @@ public class GenerationManager : MonoBehaviour
     /// Newly create agents will be Awaken (calling AwakeUp()).
     /// </summary>
     /// <param name="pirateParents"></param>
-    private void GeneratePirates(PirateLogic[] pirateParents)
-    {
-        _activePirates = new List<PirateLogic>();
-        List<GameObject> objects = pirateGenerator.RegenerateObjects();
-        foreach (GameObject obj in objects)
-        {
-            PirateLogic pirate = obj.GetComponent<PirateLogic>();
-            if (pirate != null)
-            {
-                _activePirates.Add(pirate);
-                if (pirateParents != null)
-                {
-                    PirateLogic pirateParent = pirateParents[Random.Range(0, pirateParents.Length)];
-                    pirate.Birth(pirateParent.GetData());
-                }
-
-                pirate.Mutate(mutationFactor, mutationChance);
-                pirate.AwakeUp();
-            }
-        }
-    }
+    // private void GeneratePirates(PirateLogic[] pirateParents)
+    // {
+    //     _activePirates = new List<PirateLogic>();
+    //     //List<GameObject> objects = pirateGenerator.RegenerateObjects();
+    //     foreach (GameObject obj in objects)
+    //     {
+    //         PirateLogic pirate = obj.GetComponent<PirateLogic>();
+    //         if (pirate != null)
+    //         {
+    //             _activePirates.Add(pirate);
+    //             if (pirateParents != null)
+    //             {
+    //                 PirateLogic pirateParent = pirateParents[Random.Range(0, pirateParents.Length)];
+    //                 pirate.Birth(pirateParent.GetData());
+    //             }
+    //
+    //             pirate.Mutate(mutationFactor, mutationChance);
+    //             pirate.AwakeUp();
+    //         }
+    //     }
+    // }
 
     /// <summary>
     /// Generates the list of boats using the parents list. The parent list can be null and, if so, it will be ignored.
@@ -398,7 +398,8 @@ public class GenerationManager : MonoBehaviour
         {
             foreach (var boat in _activeBoats)
             {
-                boat?.GenerateDeathCertificate();
+                if (boat!=null) // looks weird..
+                    boat?.GenerateDeathCertificate();
             }
 
             foreach (var certificate in deaths)

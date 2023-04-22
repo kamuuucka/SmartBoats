@@ -42,6 +42,7 @@ public class BoatLogic : AgentLogic
 
     private void FixedUpdate()
     {
+        if (this==null) {Debug.Log("This is weird...");}
         if (canReproduce)
         {
             hasBoxTime += Time.fixedTime/100;
@@ -58,7 +59,7 @@ public class BoatLogic : AgentLogic
 
     public void GenerateDeathCertificate()
     {
-        GenerationManager.Instance.AddToDeaths(this, name, numberOfFood, numberOfLoveBoxes, numberOfKids, lifeTime, LocalIndex);
+        GenerationManager.Instance.AddToDeaths(name, numberOfFood, numberOfLoveBoxes, numberOfKids, lifeTime, LocalIndex);
     }
 
     private void OnCollisionEnter(Collision other)
